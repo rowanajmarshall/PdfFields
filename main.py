@@ -1,10 +1,8 @@
 import sys
 from typing import List
-
-from PyPDF2.generic import Field
-
 try:
     from PyPDF2 import PdfFileReader
+    from PyPDF2.generic import Field
 except ImportError:
     print("Please install PyPDF2 e.g. `pip3 install PyPDF2`")
     exit(1)
